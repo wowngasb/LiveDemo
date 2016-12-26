@@ -4,20 +4,54 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.zgh.livedemo.LoginActivity">
+  <LinearLayout
+      android:layout_centerInParent="true"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:id="@+id/linearLayout">
 
-    <EditText
-        android:id="@+id/et_name"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:hint="用户名" />
+      <EditText
+          android:id="@+id/et_room_id"
+          android:layout_width="300dp"
+          android:layout_height="wrap_content"
+          android:hint="房间id"
+          android:layout_marginBottom="10dp"
+          android:inputType="numberDecimal"
+          />
 
-    <Button
-        android:id="@+id/btn_login"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/et_name"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="10dp"
-        android:text="登录" />
+      <EditText
+          android:id="@+id/et_uid"
+          android:layout_width="300dp"
+          android:layout_height="wrap_content"
+          android:hint="用户id"
+          android:layout_marginBottom="10dp"/>
+
+      <EditText
+          android:id="@+id/et_nick"
+          android:layout_width="300dp"
+          android:layout_height="wrap_content"
+          android:hint="用户昵称"
+          android:layout_marginBottom="10dp"/>
+
+      <Button
+          android:id="@+id/btn_login"
+          android:layout_marginTop="10dp"
+          android:layout_width="300dp"
+          android:layout_height="wrap_content"
+          android:text="登录"
+          android:background="@drawable/bt_bk"/>
+
+      <Button
+          android:id="@+id/btn_exit"
+          android:layout_marginTop="10dp"
+          android:layout_width="300dp"
+          android:layout_height="wrap_content"
+          android:text="退出"
+          android:background="@drawable/bt_bk" />
+
+  </LinearLayout>
+
+
+
 </RelativeLayout>
